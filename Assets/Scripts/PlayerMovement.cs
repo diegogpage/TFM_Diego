@@ -172,8 +172,8 @@ public class PlayerMovement : MonoBehaviour
         if (Mathf.Abs(direccionMovimiento.x) > 0.01f)
         {
             anim.SetBool("running", true);
-            if (direccionMovimiento.x > 0) transform.eulerAngles = Vector3.zero;
-            else transform.eulerAngles = new Vector3(0, 180, 0);
+            if (direccionMovimiento.x > 0) transform.eulerAngles = new Vector3(0, 90, 0);
+            else transform.eulerAngles = new Vector3(0, -90, 0);
 
             //Sonido
             if (EstoyEnSuelo())
@@ -250,7 +250,7 @@ public class PlayerMovement : MonoBehaviour
 
         estaAtacando = true;
         anim.SetTrigger("attack");
-        Invoke(nameof(ReproducirDescarga), 0.5f);
+        //Invoke(nameof(ReproducirDescarga), 0.5f);
 
     }
 
@@ -325,7 +325,7 @@ public class PlayerMovement : MonoBehaviour
 
         estaAtacando = true;
         anim.SetTrigger("tailAttack");
-        Invoke(nameof(ReproducirLatigo), 1.2f);
+        //Invoke(nameof(ReproducirLatigo), 1.2f);
         ataqueCargado = false;
         cargaActual = 0f;
     }
@@ -408,8 +408,8 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(delta);
 
         // flip del sprite según movimiento horizontal del delta
-        if (delta.x < 0) transform.eulerAngles = new Vector3(0, 180, 0);
-        else if (delta.x > 0) transform.eulerAngles = Vector3.zero;
+        if (delta.x < 0) transform.eulerAngles = new Vector3(0, -90, 0);
+        else if (delta.x > 0) transform.eulerAngles = new Vector3(0, 90, 0);
 
     }
 

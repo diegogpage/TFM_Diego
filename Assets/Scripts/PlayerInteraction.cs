@@ -11,7 +11,12 @@ public class PlayerInteraction : MonoBehaviour
 
     private Vector3 direccion;
     private IInteractuable interactuableDetectado;
+    private Animator anim;
 
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
 
     //void Update()
     //{
@@ -44,7 +49,7 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
-        direccion = transform.right;
+        direccion = transform.forward;
         Debug.DrawRay(puntoInteraccion.position, direccion * rangoInteraccion, Color.green);
 
         // Raycast continuo para detección
@@ -75,6 +80,7 @@ public class PlayerInteraction : MonoBehaviour
         // Interactúo si pulso E y hay algo delante
         if (Input.GetKeyDown(KeyCode.E) && interactuableDetectado != null)
         {
+            anim.SetTrigger("interact");
             interactuableDetectado.Interact(gameObject);
         }
     }

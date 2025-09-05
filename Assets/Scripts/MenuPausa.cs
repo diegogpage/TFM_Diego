@@ -48,6 +48,7 @@ public class MenuPausa : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         sonidoMenu.Play();
+        Debug.Log("Reanudar");
     }
 
     public void MenuPrincipal()
