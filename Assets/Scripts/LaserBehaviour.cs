@@ -6,7 +6,6 @@ public class LaserBehaviour : MonoBehaviour
     [SerializeField] private float speed;
     private PlayerLife player;
 
-    // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
