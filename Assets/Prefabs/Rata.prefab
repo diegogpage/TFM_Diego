@@ -287,10 +287,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2820030674709292498}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.00000017881393}
-  m_SizeDelta: {x: 2, y: 0.1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7772744315991378600
 CanvasRenderer:
@@ -391,11 +391,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fb9451fe6bc7c2d41a82a2d52584c0f5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -165.09
+      value: -112.45
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fb9451fe6bc7c2d41a82a2d52584c0f5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -24.05
+      value: -39.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fb9451fe6bc7c2d41a82a2d52584c0f5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -801,8 +801,8 @@ MonoBehaviour:
   waypoints:
   - {fileID: 8735738023721105305}
   - {fileID: 590171378661323549}
-  patrolSpeed: 2
-  chaseSpeed: 3.5
+  patrolSpeed: 4
+  chaseSpeed: 8
   detectionRange: 8
   attackRange: 2
-  attackCooldown: 1
+  attackCooldown: 2

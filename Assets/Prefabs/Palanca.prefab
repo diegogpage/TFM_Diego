@@ -46,7 +46,6 @@ GameObject:
   - component: {fileID: 846968399687560169}
   - component: {fileID: 567751391214799148}
   - component: {fileID: 6421913209848058915}
-  - component: {fileID: 3204382228566041314}
   m_Layer: 11
   m_Name: PalancaVisual
   m_TagString: Untagged
@@ -100,7 +99,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 9d28b29bd9ed99f46b0690d77c98bf07, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -135,8 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puertaAsociada: {fileID: 0}
-  basePalanca: {fileID: 0}
-  smoothSpeed: 3
+  smoothSpeed: 2
 --- !u!65 &6421913209848058915
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -156,23 +154,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 8.562561, y: 5.8912835, z: 23.58022}
-  m_Center: {x: 0.12234497, y: 0.050212048, z: 0.016262054}
---- !u!114 &3204382228566041314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5771217848297438281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6976021785aaec438bfc5bdf9ca9dce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  puertaAsociada: {fileID: 0}
-  basePalanca: {fileID: 0}
-  smoothSpeed: 0
+  m_Size: {x: 2.2731526, y: 5.8912835, z: 23.58022}
+  m_Center: {x: 0.016988117, y: 0.0502122, z: 0.016261736}
 --- !u!1 &7655922314635267424
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,7 +221,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 8b9504c9edfcdeb4cbfdd4bcff80ef6d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

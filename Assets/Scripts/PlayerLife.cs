@@ -8,6 +8,7 @@ public class PlayerLife : MonoBehaviour
     [SerializeField] private int vidaTotal;
     [SerializeField] private CheckpointManager checkpoint;
     private int vida;
+    private Animator anim;
 
     [Header("UI")]
     [SerializeField] private Image healthFill;
@@ -24,6 +25,7 @@ public class PlayerLife : MonoBehaviour
 
     private void Start()
     {
+        anim = GetComponent<Animator>();
         vida = vidaTotal;
         damageOverlay.gameObject.SetActive(true);
         damageOverlay.color = Color.clear;  // Comienza transparente
@@ -51,6 +53,7 @@ public class PlayerLife : MonoBehaviour
 
         if (vida <= 0)
         {
+            anim.SetTrigger("death");
             StartCoroutine(RespawnRoutine());
         }
     }
