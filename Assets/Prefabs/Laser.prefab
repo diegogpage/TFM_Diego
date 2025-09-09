@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1052454268951729231}
   - component: {fileID: 732670086398232265}
   - component: {fileID: 2864401325738694017}
-  - component: {fileID: 7481128640896063528}
+  - component: {fileID: -9052550441410329091}
   m_Layer: 0
   m_Name: Laser
   m_TagString: Untagged
@@ -71,7 +71,7 @@ CapsuleCollider:
   m_Height: 1.21
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
---- !u!82 &7481128640896063528
+--- !u!82 &-9052550441410329091
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -84,7 +84,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: dddcccb231fd8df49b389fb81f13e6ac, type: 3}
   m_Resource: {fileID: 8300000, guid: dddcccb231fd8df49b389fb81f13e6ac, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
