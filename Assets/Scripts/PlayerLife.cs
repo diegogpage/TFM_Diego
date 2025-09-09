@@ -140,7 +140,7 @@ public class PlayerLife : MonoBehaviour
     private void StopRobots()
     {
         // Para parar a los robots si matan al player
-        var robots = FindObjectsByType<Robot_Sphere>(FindObjectsSortMode.None);
+        var robots = FindObjectsByType<LaserGun>(FindObjectsSortMode.None);
         foreach (var bot in robots)
         {
             bot.StopAttacking();
